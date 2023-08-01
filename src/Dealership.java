@@ -5,14 +5,21 @@ public class Dealership {
         cust1.setAddress("Sé - 123");
         cust1.setCashOnHand(12000);
 
-        Vehicle vehicle1 = new Corsa();
-        vehicle1.setColor("Rosa");
-        vehicle1.setPrice(9000);
-        vehicle1.setYear(2000);
+        Vehicle vehicle = new Corsa();
+        vehicle.setColor("Rosa");
+        vehicle.setPrice(9000);
+        vehicle.setYear(2000);
+
+        Vehicle vehicle1 = new Peugeot();
+        vehicle.setColor("Preto");
+        vehicle.setPrice(2000);
+        vehicle.setYear(2002);
+
 
         Employe emp = new Employe();
 
-        cust1.purchaseCar(vehicle1, emp, false);
+        cust1.purchaseCar(vehicle, emp, false);
+        cust1.purchaseCar(vehicle1, emp, true);
 
 
     }
