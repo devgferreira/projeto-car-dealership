@@ -5,12 +5,15 @@ public class Dealership {
         cust1.setAddress("Sé - 123");
         cust1.setCashOnHand(12000);
 
-        /**
-         * handelCusstomer(Customer cust, boolean finance, Vehicle vehicle)
-         *  if(finance = true)
-         *
-         *
-         */
+        Vehicle vehicle1 = new Corsa();
+        vehicle1.setColor("Rosa");
+        vehicle1.setPrice(9000);
+        vehicle1.setYear(2000);
+
+        Employe emp = new Employe();
+
+        cust1.purchaseCar(vehicle1, emp, false);
+
 
     }
 }
