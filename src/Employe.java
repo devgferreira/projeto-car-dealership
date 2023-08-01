@@ -19,4 +19,6 @@ public class Employe {
     public void processTransaction(Customer cust, Vehicle vehicle){
         System.out.println("Customer has purchased the vehicle: " + vehicle+ "for the price: " + vehicle.getPrice());
     }
+
+
 }

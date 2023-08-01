@@ -4,6 +4,12 @@ public class Customer {
     private String Address;
     private double CashOnHand;
 
+    public Customer(String name, String address, double cashOnHand) {
+        Name = name;
+        Address = address;
+        CashOnHand = cashOnHand;
+    }
+
     public String getName() {
         return Name;
     }
