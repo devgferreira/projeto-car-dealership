@@ -8,7 +8,7 @@ public class Employe {
         }else if(vehicle.getPrice() <= cust.getCashOnHand()){
             processTransaction(cust,  vehicle);
         }else{
-            System.out.println("Você precisa de mais dinheiro");
+            System.out.println("Customer will need more money to purchase vehicle: " + vehicle);
         }
     }
     public void runCreditHistory(Customer cust, double amount){
@@ -16,8 +16,7 @@ public class Employe {
         System.out.println("Customer has been approved to purchase the vehicle");
     }
 
-    public static Object processTransaction(Customer cust, Vehicle vehicle){
-        Object result = System.out.printf("Querido: %s Sua compra deu: %s%n", cust.getName(), vehicle.getPrice());
-        return result;
+    public void processTransaction(Customer cust, Vehicle vehicle){
+        System.out.println("Customer has purchased the vehicle: " + vehicle+ "for the price: " + vehicle.getPrice());
     }
 }
