@@ -1,12 +1,12 @@
 public class Vehicle {
 
-    protected String Model;
+    protected String Make;
     protected String Color;
     protected int Year;
     protected double Price;
 
-    public Vehicle(String model, String color, int year, double price) {
-        Model = model;
+    public Vehicle(String make, String color, int year, double price) {
+        Make = make;
         Color = color;
         Year = year;
         Price = price;
@@ -39,7 +39,7 @@ public class Vehicle {
     @Override
     public String toString() {
         return "Vehicle{" +
-                "Model='" + Model + '\'' +
+                "Make='" + Make + '\'' +
                 ", Color='" + Color + '\'' +
                 ", Year=" + Year +
                 ", Price=" + Price +
